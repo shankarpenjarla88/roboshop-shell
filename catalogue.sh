@@ -58,7 +58,7 @@ npm install  &>>$logfile
 
 validate $? "Installing NPM Use as libraries"
 
-cp /root/roboshop-shell/catalogue.service  /etc/systemd/system/catalogue.service  &>>$logfile
+cp /root/shell-scripts/roboshop-shell/catalogue.service  /etc/systemd/system/catalogue.service  &>>$logfile
 
 validate $? "Copiying the catalogue service"
 
@@ -74,7 +74,7 @@ systemctl start catalogue  &>$logfile
 
 validate $? "Restrting the catalogue service"
 
-cp /root/roboshop-shell/mongo.repo  /etc/yum.repos.d/mongo.repo  &>>$logfile
+cp /root/shell-scripts/roboshop-shell/mongo.repo  /etc/yum.repos.d/mongo.repo  &>>$logfile
 
 validate $? "copying the mongo.repo"
 

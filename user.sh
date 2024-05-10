@@ -46,7 +46,7 @@ cd /app
 
 npm install 
 
-cp /root/roboshop-shell/user.service /etc/systemd/system/user.service
+cp /root/shell-scripts/roboshop-shell/user.service /etc/systemd/system/user.service
 
 systemctl daemon-reload
 
@@ -54,7 +54,7 @@ systemctl enable user
 
 systemctl start user
 
-cp /root/roboshop-shell/mongo.repo  /etc/yum.repos.d/mongo.repo
+cp /root/shell-scripts/roboshop-shell/mongo.repo  /etc/yum.repos.d/mongo.repo
 
 yum install mongodb-org-shell -y
 

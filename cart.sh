@@ -46,7 +46,7 @@ unzip /tmp/cart.zip
 
 cd /app 
 
-cp /root/roboshop-shell/cart.service  /etc/systemd/system/cart.service
+cp /root/shell-scripts/roboshop-shell/cart.service  /etc/systemd/system/cart.service
 
 systemctl daemon-reload
 

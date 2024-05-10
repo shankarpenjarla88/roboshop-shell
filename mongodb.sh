@@ -27,7 +27,7 @@ else
   echo "NOW YOU ARE IN THE ROOT ACCESS"
 fi
 
-cp /root/roboshop-shell/mongo.repo   /etc/yum.repos.d/mongo.repo &>> $logfile
+cp /root/shell-scripts/roboshop-shell/mongo.repo   /etc/yum.repos.d/mongo.repo &>> $logfile
 
 validate $? "Copied mongo.repo into yum.repo.d"
 

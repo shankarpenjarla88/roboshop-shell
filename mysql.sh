@@ -29,7 +29,7 @@ fi
 
 yum module disable mysql -y 
 
-cp /root/roboshop-shell/mysql.repo  /etc/yum.repos.d/mysql.repo
+cp /root/shell-scripts/roboshop-shell/mysql.repo  /etc/yum.repos.d/mysql.repo
 
 yum install mysql-community-server -y
 
