@@ -38,7 +38,7 @@ systemctl start nginx
 
 rm -rf /usr/share/nginx/html/*
 
-curl -o /tmp/web.zip https://roboshop-builds.s3.amazonaws.com/web.zip
+curl -o /tmp/web.zip https://roboshop-builds.s3.amazonaws.com/web.zip &>>$logfile
 
 cd /usr/share/nginx/html
 

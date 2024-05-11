@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Names= ("mongodb" "catalogue" "cart" "mysql" "redis" "rabbitmq" "user" "shipping" "payment" "dispatch" "web")
+Names=("mongodb" "catalogue" "cart" "mysql" "redis" "rabbitmq" "user" "shipping" "payment" "dispatch" "web")
 Image_id=ami-0f3c7d07486cad139 
 Instance_Type=" "
 Security_grp=sg-0c9760a3839e63c1dcho 
