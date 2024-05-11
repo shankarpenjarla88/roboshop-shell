@@ -1,8 +1,8 @@
 #!/bin/bash
 
 Names=("mongodb" "catalogue" "cart" "mysql" "redis" "rabbitmq" "user" "shipping" "payment" "dispatch" "web")
-Image_id=ami-0f3c7d07486cad139 
-Security_grp=sg-0c9760a3839e63c1dcho 
+Image_id=ami-0f3c7d07486cad139
+Security_grp=sg-0c9760a3839e63c1d
 Instance_type=""
 
 
