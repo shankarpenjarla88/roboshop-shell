@@ -7,7 +7,7 @@ Security_grp=sg-0c9760a3839e63c1dcho
 
 for i in "${Names[@]}"
 do
-  if [ [$i == "mongodb" || $i == "mysql" ] ]
+  if [ [$i == "mongodb" || $i == "mysql" ] ];
   then
     Instance_Type="t2.micro"
   else
