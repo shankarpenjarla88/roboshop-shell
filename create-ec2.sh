@@ -8,7 +8,7 @@ Security_grp=sg-0c9760a3839e63c1dcho
 
 for i in "${Names[@]}"
 do
-   if [[ $i == "mangodb" || $i == "mysql"]]
+   if [[ $i == "mongodb" || $i == "mysql"]]
    then
        $Instance_type = "t2.micro" 
    else
