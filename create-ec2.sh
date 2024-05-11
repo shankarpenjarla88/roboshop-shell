@@ -9,9 +9,9 @@ Instance_type=""
 
 for i in "${Names[@]}"
 do
-    if [ [ $i == "mongodb" || $i == "mysql"] ]
+    if [[ $i == "mongodb" || $i == "mysql"]]
     then
-      Instance_type= "t2.micro" 
+      Instance_type= "t3.medium" 
     else
       Instance_type= "t2.micro"
      fi 
