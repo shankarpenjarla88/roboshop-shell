@@ -1,0 +1,12 @@
+#This server belongs to mongodb group
+[mongodb]
+roboshop-us-dev-db-mongodb-01.lxio.online
+
+#this server belonging to mysql group
+[mysql]
+roboshop-us-prod-db-mysql-02.lxio.online
+
+#we have group of group
+[db:children]
+mongodb
+mysql
