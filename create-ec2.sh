@@ -15,5 +15,5 @@ do
   fi
   echo "Creatio of Instances:$i"
   aws ec2 run-instances --image-id $Image_id --count 1 --instance-type $Instance_Type  --security-group-ids $Security_grp 
-  --tag-specifications "ResourceType=instance,Tags=[{Key=webserver,Value=$i}]" 
+  
 done 
