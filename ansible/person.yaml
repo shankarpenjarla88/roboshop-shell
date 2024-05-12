@@ -1,0 +1,19 @@
+# list of persons
+- name: shankar
+  dob: 21-05-98
+  #map of adress
+  address:
+    city: munbai
+    country: india
+    street: 203/5
+# list of address 
+  addresses:
+  - type: temp address
+    city: Hyderabad
+    pincode: 500018
+  - type: perm address
+    city: Bhagyanager
+    pincode: 500018
+  - type: another address
+    city: warangal
+    pincode: 123345

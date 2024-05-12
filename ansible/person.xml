@@ -1,0 +1,13 @@
+<person>
+   <name>Shankar</name>
+   <dob>1998</dob>
+   <address>
+     <permadddress>
+        <country>India</country>
+        <city>Hyderabad</city>
+     </permaddress>
+     <currentadress>
+         <H:no>12-7-62/3/2</H:no>
+         <area>Moosapet</area>
+   </address>
+</person>
