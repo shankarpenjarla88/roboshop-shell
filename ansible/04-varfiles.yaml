@@ -1,0 +1,10 @@
+- name: Variables from files this is another type of variables
+  hosts: localhost
+  become: yes
+  vars_files:
+  - variables.yaml
+  tasks:
+  - name: printing variables
+    ansible.builtin.debug:
+      msg: "Hello,Iam learning {{course}},And my trainer is {{trainer}},Total duration of course is {{duration}}"
+

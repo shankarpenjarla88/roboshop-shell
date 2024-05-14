@@ -1,0 +1,14 @@
+- name: Installing multiple packages using loops
+  hosts: mongodb
+  become: yes
+  tasks:
+  - name: Installing git and postfix
+    ansible.builtin.yum:
+      name: "{{item}}"
+      state: installed
+    loop:
+    - git
+    - postfix
+    - cyrus-sasl-plain
+    - mailx
+

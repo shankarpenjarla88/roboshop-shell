@@ -1,0 +1,10 @@
+- name: Ansible loops
+  hosts: localhost
+  tasks:
+  - name: Printing names using loops
+    ansible.builtin.debug:
+      msg: "The name of students are:{{item}}"
+    loop:
+    - shankar
+    - manoj
+    - arun

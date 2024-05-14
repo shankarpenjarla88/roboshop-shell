@@ -1,0 +1,19 @@
+- name: creating user
+  hosts: mongodb
+  become: yes
+  tasks:
+  - name: checking, if user is already exit or not
+    ansible.builtin.command: id roboshop
+    register: statement
+    ignore_errors: true
+  - name: printing command output
+    ansible.builtin.debug:
+      msg: "Output is {{statement}}"
+  - name: printing exit status
+    ansible.builtin.debug:
+      msg: "{{statement.rc}}"
+  - name: creating the roboshop user
+    ansible.builtin.user:
+      name: roboshop
+    when: statement.rc!=0
+
